@@ -28,5 +28,6 @@ What I've learned so far:
 - Loops
 - Functions
 - Template literals (``)
+- JSDoc
 
 _Learn web development with [The Odin Project](https://www.theodinproject.com)._
