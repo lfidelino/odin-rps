@@ -1,3 +1,5 @@
+const SCORE_TO_WIN = 3;
+
 /**
  *
  * @param {int} scoreToWin
@@ -15,6 +17,7 @@ let game = (scoreToWin) => {
 
     alert(getMessage(playerChoice, playerScore, computerChoice, computerScore, scoreToWin));
   }
+  if (confirm("Play again?")) game(SCORE_TO_WIN);
 };
 
 /**
@@ -103,4 +106,4 @@ let getMessage = (playerChoice, playerScore, computerChoice, computerScore, scor
   return message;
 };
 
-game(3);
+game(SCORE_TO_WIN);
