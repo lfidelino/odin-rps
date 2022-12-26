@@ -16,18 +16,21 @@ What I've learned so far:
 - Basic CSS syntax (Selector, property, value)
 - CSS selectors
 - CSS specificity
-- The box model
+- The Box Model
 - Flexbox
 - SCSS
 - Creating and linking external JS files
 - Declaring and initializing variables
 - String methods
+- Regular Expressions
 - The 8 JS Data Types
 - Conditions
 - Ternary Operator (?)
 - Loops
 - Functions
 - Template literals (``)
+- JavaScript Developer Tools
+- Understanding errors
 - JSDoc
 
 _Learn web development with [The Odin Project](https://www.theodinproject.com)._

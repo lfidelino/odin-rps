@@ -13,9 +13,18 @@ let game = (scoreToWin) => {
     let computerChoice = getComputerChoice();
 
     if (getWinner(playerChoice, computerChoice) === "player") playerScore += 1;
-    else if (getWinner(playerChoice, computerChoice) === "computer") computerScore += 1;
+    else if (getWinner(playerChoice, computerChoice) === "computer")
+      computerScore += 1;
 
-    alert(getMessage(playerChoice, playerScore, computerChoice, computerScore, scoreToWin));
+    alert(
+      getMessage(
+        playerChoice,
+        playerScore,
+        computerChoice,
+        computerScore,
+        scoreToWin
+      )
+    );
   }
   if (confirm("Play again?")) game(SCORE_TO_WIN);
 };
@@ -39,7 +48,11 @@ let getComputerChoice = () => {
 let getPlayerChoice = (playerScore, computerScore) => {
   let playerChoice = "";
 
-  while (playerChoice != "rock" && playerChoice != "paper" && playerChoice != "scissors") {
+  while (
+    playerChoice != "rock" &&
+    playerChoice != "paper" &&
+    playerChoice != "scissors"
+  ) {
     playerChoice = prompt(`Score: ${playerScore} - ${computerScore}
 
 Rock, Paper, or Scissors?`).toLowerCase();
@@ -75,28 +88,43 @@ let getWinner = (playerChoice, computerChoice) => {
  * @param {int} scoreToWin
  * @returns string
  */
-let getMessage = (playerChoice, playerScore, computerChoice, computerScore, scoreToWin) => {
+let getMessage = (
+  playerChoice,
+  playerScore,
+  computerChoice,
+  computerScore,
+  scoreToWin
+) => {
   let message = "";
 
-  message += `${playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1)} vs ${
-    computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)
-  }`;
+  message += `${
+    playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1)
+  } vs ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}`;
 
   if (
     (playerChoice === "rock" || computerChoice === "rock") &&
     (playerChoice === "paper" || computerChoice === "paper")
   )
-    message += "\n\n" + (playerChoice === "paper" ? "You win!" : "You lose.") + " Paper covers rock.";
+    message +=
+      "\n\n" +
+      (playerChoice === "paper" ? "You win!" : "You lose.") +
+      " Paper covers rock.";
   else if (
     (playerChoice === "paper" || computerChoice === "paper") &&
     (playerChoice === "scissors" || computerChoice === "scissors")
   )
-    message += "\n\n" + (playerChoice === "scissors" ? "You win!" : "You lose.") + " Scissors cut paper.";
+    message +=
+      "\n\n" +
+      (playerChoice === "scissors" ? "You win!" : "You lose.") +
+      " Scissors cut paper.";
   else if (
     (playerChoice === "scissors" || computerChoice === "scissors") &&
     (playerChoice === "rock" || computerChoice === "rock")
   )
-    message += "\n\n" + (playerChoice === "rock" ? "You win!" : "You lose.") + " Rock crushes scissors.";
+    message +=
+      "\n\n" +
+      (playerChoice === "rock" ? "You win!" : "You lose.") +
+      " Rock crushes scissors.";
   else message += "\n\nIt's a tie.";
 
   message += `\n\nScore: ${playerScore} - ${computerScore}`;
