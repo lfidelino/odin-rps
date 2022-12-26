@@ -1,6 +1,6 @@
 # odin-rps
 
-A Rock, Paper, Scissors game built with JavaScript.
+A Rock, Paper, Scissors game built with JavaScript. See it on [GitHub Pages](https://lfidelino.github.io/odin-rps/).
 
 This is the [third project of The Odin Project's Foundation Course](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
 
