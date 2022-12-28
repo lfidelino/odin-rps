@@ -1,6 +1,6 @@
 # odin-rpsls
 
-A Rock, Paper, Scissors, Lizard, Spock is a game created by Sheldon Cooper from the TV series [The Big Bang Theory](https://en.wikipedia.org/wiki/The_Big_Bang_Theory). See this project on [GitHub Pages](https://lfidelino.github.io/odin-rpsls/).
+A Rock, Paper, Scissors, Lizard, Spock is a game created by Sheldon Cooper from the hit TV series [The Big Bang Theory](https://en.wikipedia.org/wiki/The_Big_Bang_Theory). See this project on [GitHub Pages](https://lfidelino.github.io/odin-rpsls/).
 
 This is the [third project of The Odin Project's Foundation Course](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
 
